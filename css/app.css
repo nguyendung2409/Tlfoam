@@ -1,0 +1,14 @@
+@import './reset.css';
+@import './global.css';
+@import './header.css';
+@import './banner.css';
+@import './contact.css';
+@import './intro.css';
+@import './product.css';
+
+@import './featureProduct.css';
+@import './newsEvent.css';
+@import './partner.css';
+
+@import './footer.css';
+

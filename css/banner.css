@@ -1,0 +1,27 @@
+
+.banner-list .slick-arrow {
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 2;
+  top: 50%;
+
+  border: none;
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.322);
+}
+.banner-list .slick-arrow > i {
+  color: #fff;
+  font-size: 24px;
+}
+.banner-list .slick-prev {
+  left: 50px;
+}
+.banner-list .slick-next {
+  right: 50px;
+}

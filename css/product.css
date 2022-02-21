@@ -1,0 +1,112 @@
+
+.product {
+  background-image: url('../images/product-background.jpg');
+  background-size: 100% 100%;
+}
+.product .product-container {
+  padding: 25px 75px;
+
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 0 10px;
+}
+.product .product-container .product-content {
+}
+@font-face {
+  font-family: SVN-UTTRIUMPH;
+  src: url("../fonts/SVN-UTTRIUMPHREGULAR.OTF");
+}
+.product .product-container .product-content .title {
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 20px;
+  font-family: SVN-UTTRIUMPH;
+}
+.product .product-container .product-content .desc {
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.4;
+}
+.product .product-container .product-action {
+  display: flex;
+  gap: 0 50px;
+}
+.product .product-container .product-action .product-icon > i {
+  font-size: 20px;
+  color: #fff;
+}
+.product .product-container .product-action .product-icon {
+  display: flex;
+  align-items: center;
+}
+.product .product-container .product-action .product-icon img {
+  width: 15px;
+  height: 15px;
+}
+.product .product-container .product-action .product-image {
+    display: flex;
+    gap: 0 15px;
+}
+.product .product-container .product-action .product-image img {
+  
+}
+
+
+
+.product .product-container .product-action .product-icon .button {
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 45px;
+  border-radius: 100rem;
+  background-color: transparent;
+
+  margin-left: 20px;
+}
+
+
+.product .feature-product {
+
+}
+
+@media screen and (max-width: 1270px) {
+    .product .product-container {
+        padding: 25px 15px;
+    }
+}
+@media screen and (max-width: 1148px) {
+    .product .product-container {
+        grid-template-columns: 100%;
+        gap: 20px 0;
+    }
+    .product .product-container .product-left {
+        margin: 0 auto;
+    }
+    .product .product-container .product-content {
+        text-align: center;
+    }
+    .product .product-container .product-content .desc {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .product .product-container .product-action {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .product .product-container .product-action {
+        flex-direction: column;
+        gap: 30px 0;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .product .product-container .product-action .product-image {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px ;
+    }
+}
+
+

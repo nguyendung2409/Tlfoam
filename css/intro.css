@@ -1,0 +1,69 @@
+.intro {
+  padding: 40px 0;
+}
+.intro .intro-content {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 0 15px;
+}
+
+.intro .intro-content .intro-text .title {
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 45px;
+  color: #9c5e25;
+  padding-bottom: 15px;
+}
+.intro .intro-content .intro-text img {
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.intro .intro-content .intro-text .desc {
+  font-size: 15px;
+  color: #b1b1b1;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+.intro .intro-content .intro-text .intro-last {
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.2;
+}
+
+.intro .intro-content .intro-video {
+  position: relative;
+}
+.intro .intro-content .intro-video .intro-link {
+  cursor: pointer;
+}
+.intro .intro-content .intro-video .intro-link >img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1023.98px) {
+  .intro .intro-content {
+    display: grid;
+
+    grid-template-columns: 100%;
+
+    gap: 30px 0;
+  }
+  .intro .intro-content .intro-text .desc {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .intro .intro-content .intro-video {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .intro .intro-content .intro-text .title {
+    font-size: 32px;
+  }
+}
